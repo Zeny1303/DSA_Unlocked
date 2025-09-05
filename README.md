@@ -10,12 +10,12 @@ This repository is my personal learning playlist and reference for interviews.
 
 | Folder | Description |
 |--------|-------------|
-| [arrays](./arrays) | Problems & solutions related to arrays |
-| [linked_lists](./linked_lists) | Implementations and practice of linked lists |
-| [trees](./trees) | Tree data structures and traversal algorithms |
-| [stacks](./stacks) | Stack implementations and related problems |
-| [queues](./queues) | Queue and priority queue problems |
-| [graphs](./graphs) | Graph algorithms (BFS, DFS, Dijkstra, etc.) |
+| [arrays](./Arrays) | Problems & solutions related to arrays |
+| [linked_lists](./Linked_lists) | Implementations and practice of linked lists |
+| [trees](./Trees) | Tree data structures and traversal algorithms |
+| [stacks](./Stacks) | Stack implementations and related problems |
+| [queues](./Queues) | Queue and priority queue problems |
+| [graphs](./Graphs) | Graph algorithms (BFS, DFS, Dijkstra, etc.) |
 
 *(Add or modify rows above to match your actual folder names)*
 
