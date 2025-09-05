@@ -32,17 +32,18 @@ This project uses a dedicated **Conda environment** to keep dependencies isolate
    cd DSA_Unlocked
 
 2. **Create and activate a Conda environment**
-
+    ```bash
     conda create -n Dsa python=3.10
     conda activate Dsa   
 
 3. **Install Jupyter and ipykernel inside the environment**
+    ```bash
     pip install jupyter ipykernel
 
-4. **Add the environment as a Jupyter kernel**
+5. **Add the environment as a Jupyter kernel**
     python -m ipykernel install --user --name=Dsa --display-name "Python (Dsa)"
 
-5. **Contributing & Git Workflow**
+6. **Contributing & Git Workflow**
     git add .
     git commit -m "Describe your changes"
     git push origin main
