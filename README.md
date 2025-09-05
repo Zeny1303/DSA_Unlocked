@@ -41,9 +41,11 @@ This project uses a dedicated **Conda environment** to keep dependencies isolate
     pip install jupyter ipykernel
 
 5. **Add the environment as a Jupyter kernel**
+   ```bash
     python -m ipykernel install --user --name=Dsa --display-name "Python (Dsa)"
 
-6. **Contributing & Git Workflow**
+7. **Contributing & Git Workflow**
+    ```bash
     git add .
     git commit -m "Describe your changes"
     git push origin main
