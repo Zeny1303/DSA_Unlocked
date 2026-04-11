@@ -1,15 +1,17 @@
-class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
-        triangle = [[1]]                    # base row
+class Solution(object):
+    def generate(self, numRows):
+        """
+        :type numRows: int
+        :rtype: List[List[int]]
+        """
+        '''
+        jab hum 3th
+        '''
+        result =[]
+        for i in range(numRows):
+            result.append([1 for _ in range(i+1)])
+            for j in range(1,i):
+                result[i][j] = result[i-1][j] + result[i-1][j-1]
+        return result        
 
-        for i in range(1, numRows):
-            prev = triangle[i - 1]
-            row  = [1]                      # left edge
-
-            for j in range(1, i):           # interior elements
-                row.append(prev[j-1] + prev[j])
-
-            row.append(1)                   # right edge
-            triangle.append(row)
-
-        return triangle
+        
