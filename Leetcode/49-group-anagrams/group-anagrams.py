@@ -4,10 +4,14 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        f = defaultdict(list)
-        for word in strs:
-            sorted_word = ''.join(sorted(word))
-            f[sorted_word].append(word)
-
-        return list(f.values())    
-        
+        checker={}
+        for words in strs:
+            sortedlist="".join(sorted(words))            
+            if sortedlist not in checker:
+                checker[sortedlist]=[]    
+                checker[sortedlist].append(words)
+            else:
+                checker[sortedlist].append(words)
+        return(checker.values())
+            
+           
