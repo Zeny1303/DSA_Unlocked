@@ -10,7 +10,7 @@ class Solution(object):
         for i in range(len(s)):
             ch1 = s[i]
             ch2 = t[i]
-            if ch1 in mp1 and mp1[ch1] != ch2 or ch2 in mp2 and mp2[ch2]!=ch1:
+            if ch1 in mp1 and mp1[ch1] != ch2 or ch2 in mp2 and mp2[ch2]!=ch1: 
                 return False
             # map krege 
             mp1[ch1] = ch2
