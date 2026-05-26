@@ -1,0 +1,28 @@
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+
+        buy1 = float('-inf')
+        sell1 = 0
+
+        buy2 = float('-inf')
+        sell2 = 0
+
+        for price in prices:
+
+            # First buy
+            buy1 = max(buy1, -price)
+
+            # First sell
+            sell1 = max(sell1, buy1 + price)
+
+            # Second buy
+            buy2 = max(buy2, sell1 - price)
+
+            # Second sell
+            sell2 = max(sell2, buy2 + price)
+
+        return sell2
